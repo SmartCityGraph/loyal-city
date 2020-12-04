@@ -1,0 +1,3487 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://citygraph.onti.actcognitive.org/population"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://citygraph.onti.actcognitive.org/population">
+    <Prefix name="" IRI="http://citygraph.onti.actcognitive.org/population#"/>
+    <Prefix name="pm" IRI="http://citygraph.onti.actcognitive.org/population#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Вторая версия онтологии для поддержки вычисления оценки обеспеченности. По сравнению с первой версией более сфокусирована на данных, содержащихся в таблицах Модели_востребованности_сервисов, заполненных экпертами. Цель: предоставить возможность импорта этих данных в онтологию. Идейная основа: схема Модель востребованности сервисов.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AgeGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssessmentIntensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_02"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_03"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_04"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_05"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_06"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#G_07"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0102"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_02"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0201"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0202"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0203"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0204"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0205"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_03"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0301"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0302"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_04"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0401"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0402"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0403"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0404"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0405"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0406"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0407"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_05"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0501"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0502"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0503"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0504"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_06"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0601"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0602"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0603"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_0604"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OCE_07"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Мощность"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAssessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDayAssessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOCE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValueFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#topObjAssessmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#topObjGroupProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasD1Minutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasD2Minutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasD3Minutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOCEFuctionValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUsageValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inMinutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peoplePerDayMax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peoplePerDayMin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#topCharacteristicProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#topDataAssessmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#topDataDayProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#topDataGroupAssessmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EveryDay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EveryTwoMonths"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0106"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0204"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0205"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0401"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0404"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0405"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0406"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0501"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0502"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0601"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0602"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0603"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0604"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0701"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0702"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0703"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0704"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0705"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0706"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0707"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0708"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0709"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0710"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0711"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_0712"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LessThanOnceAYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Never"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Автозаправка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Автомагазин"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Автосервис_шиномонтаж"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Автостоянка_автопарковка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Аптека"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Арт_пространство"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Архитектурное_сооружение_или_ансамбль"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Банкомат"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Баня"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Бар_Паб_Кальянная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Бассейн"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Библиотека"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Больница"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Боулинг_бильярд"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Букмекерская_контора"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Булочная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Бытовая_техника_электроника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Ветеринарная_клиника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Видовая_точка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Визовый_центр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Гипермаркет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Гостевой_дом"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Гостиница"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Государственное_учреждение"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Детские_площадки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Детский_дом"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Детский_сад"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Диспансер"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Дом_престарелых"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Женская_консультация"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Жилищное"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Жилье"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Зоомагазин"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Зоопарк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_ИОГВ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Игровая_площадка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Изготовление_ключей"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Кафе_столовая"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Кинотеатр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Кладбище_крематиорий"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Клиника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Клуб"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Консульство"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Ломбард"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_МФЦ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Магазин_одежды_обуви_аксессуаров"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Магазин_подарков"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Магазин_сантехники"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Магазин_сувениров"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Магазин_у_дома"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Массажный_салон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Миграционная_служба"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Музей"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Мусоро-перерабатывающие_заводы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Общежитие"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Объект_культурного_наследия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Оптика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Органы_опеки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Остановка_общественного_транспорта"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Отделение_банка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_ПФР"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Памятник"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Памятное_место"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Паспортный_стол"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Пешеходные_дорожки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Пешеходный_переход"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Пляж"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Пожарная_станция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Поликлиника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Полиция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Посольство"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Похоронные_услуги"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Почта"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Прокуратура"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Пункты_выдачи"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Рекреационная_зона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Религиозный_объект"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Ремонт_обуви_и_одежды"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Ремонт_часов"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Ресторан"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Роддом"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Рынок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Салон_красоты_парикмахерская"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Свалки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Спортивная_площадка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Спортивная_секция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Станция_метро"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Станция_скорой_помощи"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Стоматология"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Строительный_магазин"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Суд"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Судебные_приставы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Супермаркет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Творческий_кружкок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Театр_Концертный_зал"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Торгово-развлекательный_центр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Точки_раздельного_сбора"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Тюрьма"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Улица"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Универсам"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Урны"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Услуги"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Учреждение_высшего_профессионального_образования"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Учреждение_среднего_профессионального_образования"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Фастфуд"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Фитнес_клуб"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Фотоателье"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Хозяйственный"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Хоспис"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Хостел"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Центр_социальной_помощи"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Школа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Электрозаправка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OCE_Ювелирная_мастерская"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OnceAMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OnceAWeek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OnePerYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Power_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semiannually"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeveralTimesPerMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeveralTimesPerWeek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeveralTimesPerYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0204"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0205"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0401"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0404"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0405"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0406"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0407"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0501"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0502"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0503"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0504"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0601"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0602"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex_OCE_0603"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Алкоголизм_наркомания"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Всеобщий_праздник_с_манифистацией"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Госпитализация"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#День_Города"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#День_Победы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#День_России"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Жертва_административного_правонарушения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Жертва_уголовного_правонарушения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Крещение"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Личный_праздник"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Масленица"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Новый_год"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пасха"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Песах"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Похороны"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Праздник_жертвоприношения_Курбан_Байрам"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Праздник_разговения_Ураза-Байрам"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пурим"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Разовое_обращение_в_мед_учр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Регулярное_обращение_в_мед_учр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Религиозный_праздник"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Роды"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рождество"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рош-Ашана"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Самоизоляция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Свадьба"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Свидание"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Типичный_нерабочий_день"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Типичный_рабочий_день"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Троица"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ханука"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AgeGroup"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssessmentIntensity"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_01"/>
+        <Class IRI="#AgeGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_02"/>
+        <Class IRI="#AgeGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_03"/>
+        <Class IRI="#AgeGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_04"/>
+        <Class IRI="#OtherGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_05"/>
+        <Class IRI="#OtherGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_06"/>
+        <Class IRI="#OtherGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#G_07"/>
+        <Class IRI="#OtherGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_01"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0101"/>
+        <Class IRI="#OCE_01"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0102"/>
+        <Class IRI="#OCE_01"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0103"/>
+        <Class IRI="#OCE_01"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_02"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0201"/>
+        <Class IRI="#OCE_02"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0202"/>
+        <Class IRI="#OCE_02"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0203"/>
+        <Class IRI="#OCE_02"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0204"/>
+        <Class IRI="#OCE_02"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0205"/>
+        <Class IRI="#OCE_02"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_03"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0301"/>
+        <Class IRI="#OCE_03"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0302"/>
+        <Class IRI="#OCE_03"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_04"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0401"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0402"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0403"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0404"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0405"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0406"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0407"/>
+        <Class IRI="#OCE_04"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_05"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0501"/>
+        <Class IRI="#OCE_05"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0502"/>
+        <Class IRI="#OCE_05"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0503"/>
+        <Class IRI="#OCE_05"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0504"/>
+        <Class IRI="#OCE_05"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_06"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0601"/>
+        <Class IRI="#OCE_06"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0602"/>
+        <Class IRI="#OCE_06"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0603"/>
+        <Class IRI="#OCE_06"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_0604"/>
+        <Class IRI="#OCE_06"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OCE_07"/>
+        <Class IRI="#OCE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherGroup"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueFunction"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Мощность"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#EveryDay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#EveryTwoMonths"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_01"/>
+        <NamedIndividual IRI="#G_0101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_01"/>
+        <NamedIndividual IRI="#G_0102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_01"/>
+        <NamedIndividual IRI="#G_0103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_01"/>
+        <NamedIndividual IRI="#G_0104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_01"/>
+        <NamedIndividual IRI="#G_0105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_01"/>
+        <NamedIndividual IRI="#G_0106"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_02"/>
+        <NamedIndividual IRI="#G_0201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_02"/>
+        <NamedIndividual IRI="#G_0202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_02"/>
+        <NamedIndividual IRI="#G_0203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_02"/>
+        <NamedIndividual IRI="#G_0204"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_02"/>
+        <NamedIndividual IRI="#G_0205"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_03"/>
+        <NamedIndividual IRI="#G_0301"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_03"/>
+        <NamedIndividual IRI="#G_0302"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_04"/>
+        <NamedIndividual IRI="#G_0401"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_04"/>
+        <NamedIndividual IRI="#G_0402"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_04"/>
+        <NamedIndividual IRI="#G_0403"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_04"/>
+        <NamedIndividual IRI="#G_0404"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_04"/>
+        <NamedIndividual IRI="#G_0405"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_04"/>
+        <NamedIndividual IRI="#G_0406"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_05"/>
+        <NamedIndividual IRI="#G_0501"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_05"/>
+        <NamedIndividual IRI="#G_0502"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_06"/>
+        <NamedIndividual IRI="#G_0601"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_06"/>
+        <NamedIndividual IRI="#G_0602"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_06"/>
+        <NamedIndividual IRI="#G_0603"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_06"/>
+        <NamedIndividual IRI="#G_0604"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0701"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0702"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0703"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0704"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0705"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0706"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0707"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0708"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0709"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0710"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0711"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#G_07"/>
+        <NamedIndividual IRI="#G_0712"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#LessThanOnceAYear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#Never"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0302"/>
+        <NamedIndividual IRI="#OCE_Автозаправка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Автомагазин"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0302"/>
+        <NamedIndividual IRI="#OCE_Автосервис_шиномонтаж"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0302"/>
+        <NamedIndividual IRI="#OCE_Автостоянка_автопарковка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Аптека"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Арт_пространство"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0604"/>
+        <NamedIndividual IRI="#OCE_Архитектурное_сооружение_или_ансамбль"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0404"/>
+        <NamedIndividual IRI="#OCE_Банкомат"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0401"/>
+        <NamedIndividual IRI="#OCE_Баня"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0504"/>
+        <NamedIndividual IRI="#OCE_Бар_Паб_Кальянная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0503"/>
+        <NamedIndividual IRI="#OCE_Бассейн"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Библиотека"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Больница"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Боулинг_бильярд"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Букмекерская_контора"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0504"/>
+        <NamedIndividual IRI="#OCE_Булочная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Бытовая_техника_электроника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0407"/>
+        <NamedIndividual IRI="#OCE_Ветеринарная_клиника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0604"/>
+        <NamedIndividual IRI="#OCE_Видовая_точка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Визовый_центр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0403"/>
+        <NamedIndividual IRI="#OCE_Гипермаркет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0602"/>
+        <NamedIndividual IRI="#OCE_Гостевой_дом"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0602"/>
+        <NamedIndividual IRI="#OCE_Гостиница"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Государственное_учреждение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0103"/>
+        <NamedIndividual IRI="#OCE_Детские_площадки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Детский_дом"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0201"/>
+        <NamedIndividual IRI="#OCE_Детский_сад"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Диспансер"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Дом_престарелых"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Женская_консультация"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0101"/>
+        <NamedIndividual IRI="#OCE_Жилищное"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0101"/>
+        <NamedIndividual IRI="#OCE_Жилье"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0407"/>
+        <NamedIndividual IRI="#OCE_Зоомагазин"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Зоопарк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0203"/>
+        <NamedIndividual IRI="#OCE_ИОГВ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0501"/>
+        <NamedIndividual IRI="#OCE_Игровая_площадка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Изготовление_ключей"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0504"/>
+        <NamedIndividual IRI="#OCE_Кафе_столовая"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Кинотеатр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0205"/>
+        <NamedIndividual IRI="#OCE_Кладбище_крематиорий"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Клиника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Клуб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0603"/>
+        <NamedIndividual IRI="#OCE_Консульство"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Ломбард"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0203"/>
+        <NamedIndividual IRI="#OCE_МФЦ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Магазин_одежды_обуви_аксессуаров"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Магазин_подарков"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Магазин_сантехники"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0601"/>
+        <NamedIndividual IRI="#OCE_Магазин_сувениров"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0403"/>
+        <NamedIndividual IRI="#OCE_Магазин_у_дома"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0401"/>
+        <NamedIndividual IRI="#OCE_Массажный_салон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Миграционная_служба"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Музей"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0102"/>
+        <NamedIndividual IRI="#OCE_Мусоро-перерабатывающие_заводы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0602"/>
+        <NamedIndividual IRI="#OCE_Общежитие"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0604"/>
+        <NamedIndividual IRI="#OCE_Объект_культурного_наследия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Оптика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Органы_опеки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0301"/>
+        <NamedIndividual IRI="#OCE_Остановка_общественного_транспорта"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0404"/>
+        <NamedIndividual IRI="#OCE_Отделение_банка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0203"/>
+        <NamedIndividual IRI="#OCE_ПФР"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0604"/>
+        <NamedIndividual IRI="#OCE_Памятник"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0604"/>
+        <NamedIndividual IRI="#OCE_Памятное_место"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0203"/>
+        <NamedIndividual IRI="#OCE_Паспортный_стол"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0103"/>
+        <NamedIndividual IRI="#OCE_Пешеходные_дорожки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0103"/>
+        <NamedIndividual IRI="#OCE_Пешеходный_переход"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0501"/>
+        <NamedIndividual IRI="#OCE_Пляж"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Пожарная_станция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Поликлиника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Полиция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0603"/>
+        <NamedIndividual IRI="#OCE_Посольство"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Похоронные_услуги"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0402"/>
+        <NamedIndividual IRI="#OCE_Почта"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Прокуратура"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0402"/>
+        <NamedIndividual IRI="#OCE_Пункты_выдачи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0501"/>
+        <NamedIndividual IRI="#OCE_Рекреационная_зона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0205"/>
+        <NamedIndividual IRI="#OCE_Религиозный_объект"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Ремонт_обуви_и_одежды"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Ремонт_часов"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0504"/>
+        <NamedIndividual IRI="#OCE_Ресторан"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Роддом"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0403"/>
+        <NamedIndividual IRI="#OCE_Рынок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0401"/>
+        <NamedIndividual IRI="#OCE_Салон_красоты_парикмахерская"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0102"/>
+        <NamedIndividual IRI="#OCE_Свалки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0503"/>
+        <NamedIndividual IRI="#OCE_Спортивная_площадка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0503"/>
+        <NamedIndividual IRI="#OCE_Спортивная_секция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0301"/>
+        <NamedIndividual IRI="#OCE_Станция_метро"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Станция_скорой_помощи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Стоматология"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Строительный_магазин"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0203"/>
+        <NamedIndividual IRI="#OCE_Суд"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Судебные_приставы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0403"/>
+        <NamedIndividual IRI="#OCE_Супермаркет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Творческий_кружкок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Театр_Концертный_зал"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0502"/>
+        <NamedIndividual IRI="#OCE_Торгово-развлекательный_центр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0102"/>
+        <NamedIndividual IRI="#OCE_Точки_раздельного_сбора"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0204"/>
+        <NamedIndividual IRI="#OCE_Тюрьма"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0103"/>
+        <NamedIndividual IRI="#OCE_Улица"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0403"/>
+        <NamedIndividual IRI="#OCE_Универсам"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0102"/>
+        <NamedIndividual IRI="#OCE_Урны"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Услуги"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0201"/>
+        <NamedIndividual IRI="#OCE_Учреждение_высшего_профессионального_образования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0201"/>
+        <NamedIndividual IRI="#OCE_Учреждение_среднего_профессионального_образования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0504"/>
+        <NamedIndividual IRI="#OCE_Фастфуд"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0503"/>
+        <NamedIndividual IRI="#OCE_Фитнес_клуб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0405"/>
+        <NamedIndividual IRI="#OCE_Фотоателье"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Хозяйственный"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0202"/>
+        <NamedIndividual IRI="#OCE_Хоспис"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0602"/>
+        <NamedIndividual IRI="#OCE_Хостел"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0203"/>
+        <NamedIndividual IRI="#OCE_Центр_социальной_помощи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0201"/>
+        <NamedIndividual IRI="#OCE_Школа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0302"/>
+        <NamedIndividual IRI="#OCE_Электрозаправка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_0406"/>
+        <NamedIndividual IRI="#OCE_Ювелирная_мастерская"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#OnceAMonth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#OnceAWeek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#OnePerYear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мощность"/>
+        <NamedIndividual IRI="#Power_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#Semiannually"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#SeveralTimesPerMonth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#SeveralTimesPerWeek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssessmentIntensity"/>
+        <NamedIndividual IRI="#SeveralTimesPerYear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_01"/>
+        <NamedIndividual IRI="#ex_OCE_0101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_01"/>
+        <NamedIndividual IRI="#ex_OCE_0102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_01"/>
+        <NamedIndividual IRI="#ex_OCE_0103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_02"/>
+        <NamedIndividual IRI="#ex_OCE_0201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_02"/>
+        <NamedIndividual IRI="#ex_OCE_0202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_02"/>
+        <NamedIndividual IRI="#ex_OCE_0203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_02"/>
+        <NamedIndividual IRI="#ex_OCE_0204"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_02"/>
+        <NamedIndividual IRI="#ex_OCE_0205"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_03"/>
+        <NamedIndividual IRI="#ex_OCE_0301"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_03"/>
+        <NamedIndividual IRI="#ex_OCE_0302"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0401"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0402"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0403"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0404"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0405"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0406"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_04"/>
+        <NamedIndividual IRI="#ex_OCE_0407"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_05"/>
+        <NamedIndividual IRI="#ex_OCE_0501"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_05"/>
+        <NamedIndividual IRI="#ex_OCE_0502"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_05"/>
+        <NamedIndividual IRI="#ex_OCE_0503"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_05"/>
+        <NamedIndividual IRI="#ex_OCE_0504"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_06"/>
+        <NamedIndividual IRI="#ex_OCE_0601"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_06"/>
+        <NamedIndividual IRI="#ex_OCE_0602"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OCE_06"/>
+        <NamedIndividual IRI="#ex_OCE_0603"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Алкоголизм_наркомания"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Всеобщий_праздник_с_манифистацией"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Госпитализация"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#День_Города"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#День_Победы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#День_России"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Жертва_административного_правонарушения"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Жертва_уголовного_правонарушения"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Крещение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Личный_праздник"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Масленица"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Новый_год"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Пасха"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Песах"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Похороны"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Праздник_жертвоприношения_Курбан_Байрам"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Праздник_разговения_Ураза-Байрам"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Пурим"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Разовое_обращение_в_мед_учр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Регулярное_обращение_в_мед_учр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Религиозный_праздник"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Роды"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Рождество"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Рош-Ашана"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Самоизоляция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Свадьба"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Свидание"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Типичный_нерабочий_день"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Типичный_рабочий_день"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Троица"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Situation"/>
+        <NamedIndividual IRI="#Ханука"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">51</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">151</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">301</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">601</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <NamedIndividual IRI="#Power_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <NamedIndividual IRI="#Power_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9001</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <ObjectProperty IRI="#topObjGroupProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDay"/>
+        <ObjectProperty IRI="#topObjAssessmentProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDayAssessment"/>
+        <ObjectProperty IRI="#hasAssessment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasValueFunction"/>
+        <ObjectProperty IRI="#topObjGroupProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOCE"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Assessment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGroup"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOCE"/>
+        <Class IRI="#OCE"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasD1Minutes"/>
+        <DataProperty IRI="#inMinutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasD2Minutes"/>
+        <DataProperty IRI="#inMinutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasD3Minutes"/>
+        <DataProperty IRI="#inMinutes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOCEFuctionValue"/>
+        <DataProperty IRI="#topDataGroupAssessmentProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPower"/>
+        <DataProperty IRI="#topDataAssessmentProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasUsageValue"/>
+        <DataProperty IRI="#topDataDayProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#inMinutes"/>
+        <DataProperty IRI="#topDataAssessmentProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#peoplePerDayMax"/>
+        <DataProperty IRI="#topCharacteristicProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <DataProperty IRI="#topCharacteristicProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <Class IRI="#Мощность"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#topCharacteristicProperty"/>
+        <Class IRI="#Мощность"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#inMinutes"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#peoplePerDayMin"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#topCharacteristicProperty"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AgeGroup</IRI>
+        <Literal>Возрастная группа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Assessment</IRI>
+        <Literal>Характеристика услуги</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AssessmentIntensity</IRI>
+        <Literal>Интенсивность использования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EveryDay</IRI>
+        <Literal>Ежедневно</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EveryTwoMonths</IRI>
+        <Literal>Раз в два месяца</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_01</IRI>
+        <Literal>Моложе трудоспособного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0101</IRI>
+        <Literal>Младенцы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0102</IRI>
+        <Literal>Дети до-детскадовского возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0103</IRI>
+        <Literal>Дети до-дошкольного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0104</IRI>
+        <Literal>Дети младшего школьного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0105</IRI>
+        <Literal>Подростки младшего возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0106</IRI>
+        <Literal>Подростки старшего возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_02</IRI>
+        <Literal>Трудоспособное население</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0201</IRI>
+        <Literal>Молодые работающие горожане</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0201</IRI>
+        <Literal>Студенты и учащиеся</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0202</IRI>
+        <Literal>Работающие горожане среднего возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0203</IRI>
+        <Literal>Работающие горожане старшего возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0204</IRI>
+        <Literal>Работающие горожане пенсионного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0205</IRI>
+        <Literal>Самозанятые горожане</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_03</IRI>
+        <Literal>Старше трудоспобоного населения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0301</IRI>
+        <Literal>Люди старшего возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0302</IRI>
+        <Literal>Люди преклонного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0302</IRI>
+        <Literal>Работающие пенсионеры</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_04</IRI>
+        <Literal>Горожане с детьми</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0401</IRI>
+        <Literal>Беременные женщины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0402</IRI>
+        <Literal>Горожане с младенцами</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0403</IRI>
+        <Literal>Горожане с детьми до-детсадовского возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0404</IRI>
+        <Literal>Горожане с детьми дошкольного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0405</IRI>
+        <Literal>Горожане с детьми младшего школьного возраста</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0406</IRI>
+        <Literal>Горожане с подростками</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_05</IRI>
+        <Literal>Инвалиды</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0501</IRI>
+        <Literal>Лица с инвалидностью по зрению</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0502</IRI>
+        <Literal>Лица с ограниченными возможностями передвижения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_06</IRI>
+        <Literal>Туристы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0601</IRI>
+        <Literal>Туристы в составе организованных групп</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0602</IRI>
+        <Literal>Неорганизованные туристы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0603</IRI>
+        <Literal>Приезжие к мероприятиям</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0604</IRI>
+        <Literal>Приезжие по рабочим вопросам</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#G_07</IRI>
+        <Literal>Состояния с длительным временем пребывания</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_07</IRI>
+        <Literal>Специальные группы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0701</IRI>
+        <Literal>Студенты и учащиеся</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0702</IRI>
+        <Literal>Владельцы собак</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0703</IRI>
+        <Literal>Автовладельцы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0704</IRI>
+        <Literal>Мотоциклисты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0705</IRI>
+        <Literal>Велосипедисты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0705</IRI>
+        <Literal>Пользователи общественного транспорта</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0706</IRI>
+        <Literal>Трудовые мигранты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0707</IRI>
+        <Literal>Верующие, православные</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0708</IRI>
+        <Literal>Верующие, мусульмане</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0709</IRI>
+        <Literal>Верующие, иудеи</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0710</IRI>
+        <Literal>Горожане, ведущие раздельный сбор мусора</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0711</IRI>
+        <Literal>Беременные женщины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0711</IRI>
+        <Literal>Горожане, занимающиеся спортом</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#G_0712</IRI>
+        <Literal>Горожане, ведущие активный образ жизни</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal>Добавить подгруппы экземплярами в подклассы Социальной группы с одноимённого листа в таблице. При этом возрастные характеристики вносить не в название экземпляра, а связывать с ними data property hasStartDate и hasEndDate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal>Один из подклассов данной группы - Индивидуальные группы горожан - определён как &quot;Состояния с длительным временем пребывания&quot;. Возможно, эту характеристику стоит расширить на весь класс Социальная группа - это отделит его от класса Жизненная ситуация.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Group</IRI>
+        <Literal>Социальная группа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LessThanOnceAYear</IRI>
+        <Literal>Реже раза в год</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Never</IRI>
+        <Literal>Никогда</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OCE</IRI>
+        <Literal>Должны быть добавлены соответствующие подклассы второго и третьего уровня из столбца Объект городской среды в таблице. Должны быть добавлены экземпялры, соответствующие названию класса (punning).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OCE</IRI>
+        <Literal>Они же услуги и сервисы. Подклассы первого уровня - это обобщение до объектов инфраструктуры (столбец Категория в таблице), второго уровня - до объектов, выполняющих определённую функцию (столбец Функция,  нужно добавлять классам префикс объект_), третьего уровня - Объект (соответствующий столбец).
+Для возможности импорта оценок на каждом уровне используется punning, то есть, в каждом классе есть экземпляр с таким же названием.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE</IRI>
+        <Literal>Объект городской среды</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_01</IRI>
+        <Literal>Объект базовой инфраструктуры</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0101</IRI>
+        <Literal>Жильё</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0102</IRI>
+        <Literal>Мусор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0103</IRI>
+        <Literal>Пешеходное пространство</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_02</IRI>
+        <Literal>Объект социальной инфраструктуры</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0201</IRI>
+        <Literal>Образование</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0202</IRI>
+        <Literal>Здравоохранение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0203</IRI>
+        <Literal>Социальное обслуживание</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0204</IRI>
+        <Literal>Специализированные учреждения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0205</IRI>
+        <Literal>Религия</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_03</IRI>
+        <Literal>Объект транспортной инфраструктуры</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0301</IRI>
+        <Literal>Общественный транспорт</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0302</IRI>
+        <Literal>Личный транспорт</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_04</IRI>
+        <Literal>Объект инфраструктуры обслуживания населения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0401</IRI>
+        <Literal>Уход за собой</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0402</IRI>
+        <Literal>Доставка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0403</IRI>
+        <Literal>Продовольствие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0404</IRI>
+        <Literal>Финансы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0405</IRI>
+        <Literal>Услуги</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0406</IRI>
+        <Literal>Товары</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0407</IRI>
+        <Literal>Питомцы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_05</IRI>
+        <Literal>Объект инфраструктуры досуга</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0501</IRI>
+        <Literal>Природа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0502</IRI>
+        <Literal>Культура, развлечение, творчество</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0503</IRI>
+        <Literal>Спорт</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0504</IRI>
+        <Literal>Питание</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_06</IRI>
+        <Literal>Объект туристической инфраструктуры</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0601</IRI>
+        <Literal>Товары для туристов</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0602</IRI>
+        <Literal>Жильё для приезжих</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0603</IRI>
+        <Literal>Дипломатическое представительство</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_0604</IRI>
+        <Literal>Достопримечательности</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_07</IRI>
+        <Literal>Инфраструктура приложения труда</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Автозаправка</IRI>
+        <Literal>Автозаправка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Автомагазин</IRI>
+        <Literal>Автомагазин</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Автосервис_шиномонтаж</IRI>
+        <Literal>Автосервис_шиномонтаж</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Автостоянка_автопарковка</IRI>
+        <Literal>Автостоянка_автопарковка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Аптека</IRI>
+        <Literal>Аптека</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Арт_пространство</IRI>
+        <Literal>Арт_пространство</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Архитектурное_сооружение_или_ансамбль</IRI>
+        <Literal>Архитектурное_сооружение_или_ансамбль</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Банкомат</IRI>
+        <Literal>Банкомат</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Баня</IRI>
+        <Literal>Баня</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Бар_Паб_Кальянная</IRI>
+        <Literal>Бар_Паб_Кальянная</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Бассейн</IRI>
+        <Literal>Бассейн</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Библиотека</IRI>
+        <Literal>Библиотека</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Больница</IRI>
+        <Literal>Больница</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Боулинг_бильярд</IRI>
+        <Literal>Боулинг_бильярд</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Букмекерская_контора</IRI>
+        <Literal>Букмекерская_контора</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Булочная</IRI>
+        <Literal>Булочная</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Бытовая_техника_электроника</IRI>
+        <Literal>Бытовая_техника_электроника</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Ветеринарная_клиника</IRI>
+        <Literal>Ветеринарная_клиника</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Видовая_точка</IRI>
+        <Literal>Видовая_точка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Визовый_центр</IRI>
+        <Literal>Визовый_центр</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Гипермаркет</IRI>
+        <Literal>Гипермаркет</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Гостевой_дом</IRI>
+        <Literal>Гостевой_дом</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Гостиница</IRI>
+        <Literal>Гостиница</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Государственное_учреждение</IRI>
+        <Literal>Государственное_учреждение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Детские_площадки</IRI>
+        <Literal>Детские_площадки</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Детский_дом</IRI>
+        <Literal>Детский_дом</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Детский_сад</IRI>
+        <Literal>Детский_сад</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Диспансер</IRI>
+        <Literal>Диспансер</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Дом_престарелых</IRI>
+        <Literal>Дом_престарелых</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Женская_консультация</IRI>
+        <Literal>Женская_консультация</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Жилищное</IRI>
+        <Literal>Жилищное</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Жилье</IRI>
+        <Literal>Жилье</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Зоомагазин</IRI>
+        <Literal>Зоомагазин</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Зоопарк</IRI>
+        <Literal>Зоопарк</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_ИОГВ</IRI>
+        <Literal>ИОГВ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Игровая_площадка</IRI>
+        <Literal>Игровая_площадка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Изготовление_ключей</IRI>
+        <Literal>Изготовление_ключей</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Кафе_столовая</IRI>
+        <Literal>Кафе_столовая</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Кинотеатр</IRI>
+        <Literal>Кинотеатр</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Кладбище_крематиорий</IRI>
+        <Literal>Кладбище_крематиорий</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Клиника</IRI>
+        <Literal>Клиника</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Клуб</IRI>
+        <Literal>Клуб</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Консульство</IRI>
+        <Literal>Консульство</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Ломбард</IRI>
+        <Literal>Ломбард</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_МФЦ</IRI>
+        <Literal>МФЦ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Магазин_одежды_обуви_аксессуаров</IRI>
+        <Literal>Магазин_одежды_обуви_аксессуаров</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Магазин_подарков</IRI>
+        <Literal>Магазин_подарков</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Магазин_сантехники</IRI>
+        <Literal>Магазин_сантехники</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Магазин_сувениров</IRI>
+        <Literal>Магазин_сувениров</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Магазин_у_дома</IRI>
+        <Literal>Магазин_у_дома</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Массажный_салон</IRI>
+        <Literal>Массажный_салон</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Миграционная_служба</IRI>
+        <Literal>Миграционная_служба</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Музей</IRI>
+        <Literal>Музей</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Мусоро-перерабатывающие_заводы</IRI>
+        <Literal>Мусоро-перерабатывающие_заводы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Общежитие</IRI>
+        <Literal>Общежитие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Объект_культурного_наследия</IRI>
+        <Literal>Объект_культурного_наследия</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Оптика</IRI>
+        <Literal>Оптика</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Органы_опеки</IRI>
+        <Literal>Органы_опеки</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Остановка_общественного_транспорта</IRI>
+        <Literal>Остановка_общественного_транспорта</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Отделение_банка</IRI>
+        <Literal>Отделение_банка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_ПФР</IRI>
+        <Literal>ПФР</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Памятник</IRI>
+        <Literal>Памятник</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Памятное_место</IRI>
+        <Literal>Памятное_место</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Паспортный_стол</IRI>
+        <Literal>Паспортный_стол</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Пешеходные_дорожки</IRI>
+        <Literal>Пешеходные_дорожки</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Пешеходный_переход</IRI>
+        <Literal>Пешеходный_переход</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Пляж</IRI>
+        <Literal>Пляж</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Пожарная_станция</IRI>
+        <Literal>Пожарная_станция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Поликлиника</IRI>
+        <Literal>Поликлиника</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Полиция</IRI>
+        <Literal>Полиция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Посольство</IRI>
+        <Literal>Посольство</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Похоронные_услуги</IRI>
+        <Literal>Похоронные_услуги</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Почта</IRI>
+        <Literal>Почта</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Прокуратура</IRI>
+        <Literal>Прокуратура</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Пункты_выдачи</IRI>
+        <Literal>Пункты_выдачи</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Рекреационная_зона</IRI>
+        <Literal>Рекреационная_зона</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Религиозный_объект</IRI>
+        <Literal>Религиозный_объект</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Ремонт_обуви_и_одежды</IRI>
+        <Literal>Ремонт_обуви_и_одежды</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Ремонт_часов</IRI>
+        <Literal>Ремонт_часов</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Ресторан</IRI>
+        <Literal>Ресторан</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Роддом</IRI>
+        <Literal>Роддом</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Рынок</IRI>
+        <Literal>Рынок</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Салон_красоты_парикмахерская</IRI>
+        <Literal>Салон красоты_парикмахерская</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Свалки</IRI>
+        <Literal>Свалки</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Спортивная_площадка</IRI>
+        <Literal>Спортивная_площадка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Спортивная_секция</IRI>
+        <Literal>Спортивная_секция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Станция_метро</IRI>
+        <Literal>Станция_метро</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Станция_скорой_помощи</IRI>
+        <Literal>Станция_скорой_помощи</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Стоматология</IRI>
+        <Literal>Стоматология</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Строительный_магазин</IRI>
+        <Literal>Строительный_магазин</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Суд</IRI>
+        <Literal>Суд</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Судебные_приставы</IRI>
+        <Literal>Судебные_приставы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Супермаркет</IRI>
+        <Literal>Супермаркет</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Творческий_кружкок</IRI>
+        <Literal>Творческий_кружкок</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Театр_Концертный_зал</IRI>
+        <Literal>Театр_Концертный_зал</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Торгово-развлекательный_центр</IRI>
+        <Literal>Торгово-развлекательный_центр</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Точки_раздельного_сбора</IRI>
+        <Literal>Точки_раздельного_сбора</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Тюрьма</IRI>
+        <Literal>Тюрьма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Улица</IRI>
+        <Literal>Улица</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Универсам</IRI>
+        <Literal>Универсам</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Урны</IRI>
+        <Literal>Урны</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Услуги</IRI>
+        <Literal>Услуги</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Учреждение_высшего_профессионального_образования</IRI>
+        <Literal>Учреждение_высшего_профессионального_образования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Учреждение_среднего_профессионального_образования</IRI>
+        <Literal>Учреждение_среднего_профессионального_образования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Фастфуд</IRI>
+        <Literal>Фастфуд</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Фитнес_клуб</IRI>
+        <Literal>Фитнес_клуб</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Фотоателье</IRI>
+        <Literal>Фотоателье</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Хозяйственный</IRI>
+        <Literal>Хозяйственный</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Хоспис</IRI>
+        <Literal>Хоспис</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Хостел</IRI>
+        <Literal>Хостел</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Центр_социальной_помощи</IRI>
+        <Literal>Центр_социальной_помощи</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Школа</IRI>
+        <Literal>Школа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Электрозаправка</IRI>
+        <Literal>Электрозаправка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OCE_Ювелирная_мастерская</IRI>
+        <Literal>Ювелирная_мастерская</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnceAMonth</IRI>
+        <Literal>Раз в месяц</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnceAWeek</IRI>
+        <Literal>Раз в неделю</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnePerYear</IRI>
+        <Literal>Раз в год</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OtherGroup</IRI>
+        <Literal>Дополнительная группа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Semiannually</IRI>
+        <Literal>Раз в полгода</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Service</IRI>
+        <Literal>Оценка сервиса</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeveralTimesPerMonth</IRI>
+        <Literal>Несколько раз в месяц</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeveralTimesPerWeek</IRI>
+        <Literal>Несколько раз в неделю</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeveralTimesPerYear</IRI>
+        <Literal>Несколько раз в год</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Situation</IRI>
+        <Literal>Подклассы частично совпадают с подклассами Особенного дня. Такие помечены суффиксом _ситуация.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Situation</IRI>
+        <Literal>Состояния с коротким временем пребывания.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Situation</IRI>
+        <Literal>Жизненная ситуация</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ValueFunction</IRI>
+        <Literal>Значимость функций инфраструктуры</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasD1Minutes</IRI>
+        <Literal>Требования к транспортной доступности на общественном транспорте (в минутах)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasD2Minutes</IRI>
+        <Literal>Требования к транспортной доступности на личном транспорте (в минутах)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasD3Minutes</IRI>
+        <Literal>Требования к доступности (в минутах)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOCEFuctionValue</IRI>
+        <Literal>значимость отдельных функций (в категориях) в ценностной структуре (актуально для уровня всей группы/ситуации)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasUsageValue</IRI>
+        <Literal>оценка вероятности использования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inMinutes</IRI>
+        <Literal>в минутах</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Алкоголизм_наркомания</IRI>
+        <Literal>Алкоголизм_наркомания</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Всеобщий_праздник_с_манифистацией</IRI>
+        <Literal>Всеобщий_праздник_с_манифистацией</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Госпитализация</IRI>
+        <Literal>Госпитализация</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#День_Города</IRI>
+        <Literal>День_Города</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#День_Победы</IRI>
+        <Literal>День_Победы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#День_России</IRI>
+        <Literal>День_России</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Жертва_административного_правонарушения</IRI>
+        <Literal>Жертва_административного_правонарушения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Жертва_уголовного_правонарушения</IRI>
+        <Literal>Жертва_уголовного_правонарушения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Крещение</IRI>
+        <Literal>Крещение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Личный_праздник</IRI>
+        <Literal>Личный_праздник</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Масленица</IRI>
+        <Literal>Масленица</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Мощность</IRI>
+        <Literal>Лёгкость получения услуги для большого количества желающих или величину потока клиентов, которую услуга способна обработать. Класс должен включать объекты, образованные связью Услуги и Социальной группы (с определённым коэффициентом).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Новый_год</IRI>
+        <Literal>Новый_год </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Пасха</IRI>
+        <Literal>Пасха</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Песах</IRI>
+        <Literal>Песах</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Похороны</IRI>
+        <Literal>Похороны</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Праздник_жертвоприношения_Курбан_Байрам</IRI>
+        <Literal>Праздник_жертвоприношения_Курбан_Байрам</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Праздник_разговения_Ураза-Байрам</IRI>
+        <Literal>Праздник_разговения_Ураза-Байрам</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Пурим</IRI>
+        <Literal>Пурим</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Разовое_обращение_в_мед_учр</IRI>
+        <Literal>Разовое_обращение_в_мед_учр</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Регулярное_обращение_в_мед_учр</IRI>
+        <Literal>Регулярное_обращение_в_мед_учр</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Религиозный_праздник</IRI>
+        <Literal>Религиозный_праздник</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Роды</IRI>
+        <Literal>Роды</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Рождество</IRI>
+        <Literal>Рождество</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Рош-Ашана</IRI>
+        <Literal>Рош-Ашана</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Самоизоляция</IRI>
+        <Literal>Самоизоляция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Свадьба</IRI>
+        <Literal>Свадьба</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Свидание</IRI>
+        <Literal>Свидание</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Типичный_нерабочий_день</IRI>
+        <Literal>Типичный_нерабочий_день</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Типичный_рабочий_день</IRI>
+        <Literal>Типичный_рабочий_день</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Троица</IRI>
+        <Literal>Троица</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ханука</IRI>
+        <Literal>Ханука</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
