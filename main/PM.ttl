@@ -147,75 +147,11 @@ pm:topDataGroupAssessmentProperty rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
-###  http://citygraph.onti.actcognitive.org/core#AgeGroup
-cg:AgeGroup rdf:type owl:Class ;
-            rdfs:subClassOf cg:SocialGroup ;
-            rdfs:comment "Группа населения относительно их возраста" ;
-            rdfs:label "Возрастная группа" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#DisabledPopulation
-cg:DisabledPopulation rdf:type owl:Class ;
-                      rdfs:subClassOf cg:OtherGroup ;
-                      rdfs:comment "Сюда входят группы людей с ограниченными возможностями, которым необходимы специальные городские условия для комфортной жизни." ;
-                      rdfs:label "Инвалиды" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#OtherGroup
-cg:OtherGroup rdf:type owl:Class ;
-              rdfs:subClassOf cg:SocialGroup ;
-              rdfs:comment "Дополнительная характеристика группы людей, которые не исключают друг друга" ;
-              rdfs:label "Дополнительная группа" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#OtherPopulationGroups
-cg:OtherPopulationGroups rdf:type owl:Class ;
-                         rdfs:subClassOf cg:OtherGroup ;
-                         rdfs:comment "Состояния с длительным временем пребывания" ,
-                                      "Сюда входят группы сформированные по дополнительным признакам, такие как религия, отношение к сбору мусора, а также наличие животных, личного автомобиля и т.д." ;
-                         rdfs:label "Специальные группы" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#PopulationWithChildren
-cg:PopulationWithChildren rdf:type owl:Class ;
-                          rdfs:subClassOf cg:OtherGroup ;
-                          rdfs:comment "Группы горожан, воспитывающие детей (в том числе беременные женщины)." ;
-                          rdfs:label "Горожане с детьми" .
-
-
 ###  http://citygraph.onti.actcognitive.org/core#SocialGroup
 cg:SocialGroup rdf:type owl:Class ;
                rdfs:comment "Добавить подгруппы экземплярами в подклассы Социальной группы с одноимённого листа в таблице. При этом возрастные характеристики вносить не в название экземпляра, а связывать с ними data property hasStartDate и hasEndDate." ,
                             "Один из подклассов данной группы - Индивидуальные группы горожан - определён как \"Состояния с длительным временем пребывания\". Возможно, эту характеристику стоит расширить на весь класс Социальная группа - это отделит его от класса Жизненная ситуация." ;
                rdfs:label "Социальная группа" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#TouristPopulation
-cg:TouristPopulation rdf:type owl:Class ;
-                     rdfs:subClassOf cg:OtherGroup ;
-                     rdfs:comment "Сюда входят все группы приезжих, вне зависимости от их организованности и причины приезда." ;
-                     rdfs:label "Группа туристов" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#UnderWorkingAgePopulation
-cg:UnderWorkingAgePopulation rdf:type owl:Class ;
-                             rdfs:subClassOf cg:AgeGroup ;
-                             rdfs:comment "Сюда входят группы населения в возрасте от 0 до 18-ти лет." ;
-                             rdfs:label "Несовершеннолетние" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#UpwardWorkingAgePopulation
-cg:UpwardWorkingAgePopulation rdf:type owl:Class ;
-                              rdfs:subClassOf cg:AgeGroup ;
-                              rdfs:comment "Сюда входят группы населения достигшие пенсионного возраста (60+)." ;
-                              rdfs:label "Старше трудоспобоного возраста" .
-
-
-###  http://citygraph.onti.actcognitive.org/core#WorkingAgePopulation
-cg:WorkingAgePopulation rdf:type owl:Class ;
-                        rdfs:subClassOf cg:AgeGroup ;
-                        rdfs:comment "Сюда входят группы населения, которые находятся в трудоспособном возрасте, либо продолжили работать после достижения пенсионного возраста." ;
-                        rdfs:label "Трудоспособные горожане" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#Accommodation
@@ -233,6 +169,13 @@ pm:AccommodationForVisitors rdf:type owl:Class ;
 ###  http://citygraph.onti.actcognitive.org/population#AdditionalClass
 pm:AdditionalClass rdf:type owl:Class ;
                    rdfs:label "Характеристика услуги" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#AgeGroup
+pm:AgeGroup rdf:type owl:Class ;
+            rdfs:subClassOf cg:SocialGroup ;
+            rdfs:comment "Группа населения относительно их возраста" ;
+            rdfs:label "Возрастная группа" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#Assessment
@@ -267,6 +210,13 @@ pm:CulturalAndEntertainmentObject rdf:type owl:Class ;
 pm:DiplomaticObject rdf:type owl:Class ;
                     rdfs:subClassOf pm:ObjectOfTouristInfrastructure ;
                     rdfs:label "Дипломатическое представительство" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#DisabledPopulation
+pm:DisabledPopulation rdf:type owl:Class ;
+                      rdfs:subClassOf pm:OtherGroup ;
+                      rdfs:comment "Сюда входят группы людей с ограниченными возможностями, которым необходимы специальные городские условия для комфортной жизни." ;
+                      rdfs:label "Инвалиды" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#EducationObject
@@ -362,6 +312,21 @@ pm:ObjectOfTransportInfrastructure rdf:type owl:Class ;
                                    rdfs:label "Объект транспортной инфраструктуры" .
 
 
+###  http://citygraph.onti.actcognitive.org/population#OtherGroup
+pm:OtherGroup rdf:type owl:Class ;
+              rdfs:subClassOf cg:SocialGroup ;
+              rdfs:comment "Дополнительная характеристика группы людей, которые не исключают друг друга" ;
+              rdfs:label "Дополнительная группа" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#OtherPopulationGroups
+pm:OtherPopulationGroups rdf:type owl:Class ;
+                         rdfs:subClassOf pm:OtherGroup ;
+                         rdfs:comment "Состояния с длительным временем пребывания" ,
+                                      "Сюда входят группы сформированные по дополнительным признакам, такие как религия, отношение к сбору мусора, а также наличие животных, личного автомобиля и т.д." ;
+                         rdfs:label "Специальные группы" .
+
+
 ###  http://citygraph.onti.actcognitive.org/population#PedestrianSpace
 pm:PedestrianSpace rdf:type owl:Class ;
                    rdfs:subClassOf pm:ObjectOfBasicInfrastructure ;
@@ -378,6 +343,13 @@ pm:PersonalCareObject rdf:type owl:Class ;
 pm:PersonalTransportServiceObject rdf:type owl:Class ;
                                   rdfs:subClassOf pm:ObjectOfTransportInfrastructure ;
                                   rdfs:label "Объект обслуги личного транспорта" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#PopulationWithChildren
+pm:PopulationWithChildren rdf:type owl:Class ;
+                          rdfs:subClassOf pm:OtherGroup ;
+                          rdfs:comment "Группы горожан, воспитывающие детей (в том числе беременные женщины)." ;
+                          rdfs:label "Горожане с детьми" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#PostObject
@@ -434,10 +406,31 @@ pm:SupplyObject rdf:type owl:Class ;
                 rdfs:label "Продовольственный объект" .
 
 
+###  http://citygraph.onti.actcognitive.org/population#TouristPopulation
+pm:TouristPopulation rdf:type owl:Class ;
+                     rdfs:subClassOf pm:OtherGroup ;
+                     rdfs:comment "Сюда входят все группы приезжих, вне зависимости от их организованности и причины приезда." ;
+                     rdfs:label "Группа туристов" .
+
+
 ###  http://citygraph.onti.actcognitive.org/population#TouristRetailObject
 pm:TouristRetailObject rdf:type owl:Class ;
                        rdfs:subClassOf pm:ObjectOfTouristInfrastructure ;
                        rdfs:label "Товары для туристов" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#UnderWorkingAgePopulation
+pm:UnderWorkingAgePopulation rdf:type owl:Class ;
+                             rdfs:subClassOf pm:AgeGroup ;
+                             rdfs:comment "Сюда входят группы населения в возрасте от 0 до 18-ти лет." ;
+                             rdfs:label "Несовершеннолетние" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#UpwardWorkingAgePopulation
+pm:UpwardWorkingAgePopulation rdf:type owl:Class ;
+                              rdfs:subClassOf pm:AgeGroup ;
+                              rdfs:comment "Сюда входят группы населения достигшие пенсионного возраста (60+)." ;
+                              rdfs:label "Старше трудоспобоного возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#ValueFunction
@@ -450,6 +443,13 @@ pm:ValueFunction rdf:type owl:Class ;
 pm:WasteObject rdf:type owl:Class ;
                rdfs:subClassOf pm:ObjectOfBasicInfrastructure ;
                rdfs:label "Объект обращения с отходами" .
+
+
+###  http://citygraph.onti.actcognitive.org/population#WorkingAgePopulation
+pm:WorkingAgePopulation rdf:type owl:Class ;
+                        rdfs:subClassOf pm:AgeGroup ;
+                        rdfs:comment "Сюда входят группы населения, которые находятся в трудоспособном возрасте, либо продолжили работать после достижения пенсионного возраста." ;
+                        rdfs:label "Трудоспособные горожане" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#Мощность
@@ -476,227 +476,227 @@ pm:EveryTwoMonths rdf:type owl:NamedIndividual ,
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0101
 pm:G_0101 rdf:type owl:NamedIndividual ,
-                   cg:UnderWorkingAgePopulation ;
+                   pm:UnderWorkingAgePopulation ;
           rdfs:label "Младенцы" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0102
 pm:G_0102 rdf:type owl:NamedIndividual ,
-                   cg:UnderWorkingAgePopulation ;
+                   pm:UnderWorkingAgePopulation ;
           rdfs:label "Дети до-детскадовского возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0103
 pm:G_0103 rdf:type owl:NamedIndividual ,
-                   cg:UnderWorkingAgePopulation ;
+                   pm:UnderWorkingAgePopulation ;
           rdfs:label "Дети до-дошкольного возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0104
 pm:G_0104 rdf:type owl:NamedIndividual ,
-                   cg:UnderWorkingAgePopulation ;
+                   pm:UnderWorkingAgePopulation ;
           rdfs:label "Дети младшего школьного возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0105
 pm:G_0105 rdf:type owl:NamedIndividual ,
-                   cg:UnderWorkingAgePopulation ;
+                   pm:UnderWorkingAgePopulation ;
           rdfs:label "Подростки младшего возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0106
 pm:G_0106 rdf:type owl:NamedIndividual ,
-                   cg:UnderWorkingAgePopulation ;
+                   pm:UnderWorkingAgePopulation ;
           rdfs:label "Подростки старшего возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0201
 pm:G_0201 rdf:type owl:NamedIndividual ,
-                   cg:WorkingAgePopulation ;
+                   pm:WorkingAgePopulation ;
           rdfs:label "Молодые работающие горожане" ,
                      "Студенты и учащиеся" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0202
 pm:G_0202 rdf:type owl:NamedIndividual ,
-                   cg:WorkingAgePopulation ;
+                   pm:WorkingAgePopulation ;
           rdfs:label "Работающие горожане среднего возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0203
 pm:G_0203 rdf:type owl:NamedIndividual ,
-                   cg:WorkingAgePopulation ;
+                   pm:WorkingAgePopulation ;
           rdfs:label "Работающие горожане старшего возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0204
 pm:G_0204 rdf:type owl:NamedIndividual ,
-                   cg:WorkingAgePopulation ;
+                   pm:WorkingAgePopulation ;
           rdfs:label "Работающие горожане пенсионного возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0205
 pm:G_0205 rdf:type owl:NamedIndividual ,
-                   cg:WorkingAgePopulation ;
+                   pm:WorkingAgePopulation ;
           rdfs:label "Самозанятые горожане" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0301
 pm:G_0301 rdf:type owl:NamedIndividual ,
-                   cg:UpwardWorkingAgePopulation ;
+                   pm:UpwardWorkingAgePopulation ;
           rdfs:label "Люди старшего возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0302
 pm:G_0302 rdf:type owl:NamedIndividual ,
-                   cg:UpwardWorkingAgePopulation ;
+                   pm:UpwardWorkingAgePopulation ;
           rdfs:label "Люди преклонного возраста" ,
                      "Работающие пенсионеры" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0401
 pm:G_0401 rdf:type owl:NamedIndividual ,
-                   cg:PopulationWithChildren ;
+                   pm:PopulationWithChildren ;
           rdfs:label "Беременные женщины" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0402
 pm:G_0402 rdf:type owl:NamedIndividual ,
-                   cg:PopulationWithChildren ;
+                   pm:PopulationWithChildren ;
           rdfs:label "Горожане с младенцами" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0403
 pm:G_0403 rdf:type owl:NamedIndividual ,
-                   cg:PopulationWithChildren ;
+                   pm:PopulationWithChildren ;
           rdfs:label "Горожане с детьми до-детсадовского возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0404
 pm:G_0404 rdf:type owl:NamedIndividual ,
-                   cg:PopulationWithChildren ;
+                   pm:PopulationWithChildren ;
           rdfs:label "Горожане с детьми дошкольного возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0405
 pm:G_0405 rdf:type owl:NamedIndividual ,
-                   cg:PopulationWithChildren ;
+                   pm:PopulationWithChildren ;
           rdfs:label "Горожане с детьми младшего школьного возраста" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0406
 pm:G_0406 rdf:type owl:NamedIndividual ,
-                   cg:PopulationWithChildren ;
+                   pm:PopulationWithChildren ;
           rdfs:label "Горожане с подростками" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0501
 pm:G_0501 rdf:type owl:NamedIndividual ,
-                   cg:DisabledPopulation ;
+                   pm:DisabledPopulation ;
           rdfs:label "Лица с инвалидностью по зрению" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0502
 pm:G_0502 rdf:type owl:NamedIndividual ,
-                   cg:DisabledPopulation ;
+                   pm:DisabledPopulation ;
           rdfs:label "Лица с ограниченными возможностями передвижения" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0601
 pm:G_0601 rdf:type owl:NamedIndividual ,
-                   cg:TouristPopulation ;
+                   pm:TouristPopulation ;
           rdfs:label "Туристы в составе организованных групп" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0602
 pm:G_0602 rdf:type owl:NamedIndividual ,
-                   cg:TouristPopulation ;
+                   pm:TouristPopulation ;
           rdfs:label "Неорганизованные туристы" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0603
 pm:G_0603 rdf:type owl:NamedIndividual ,
-                   cg:TouristPopulation ;
+                   pm:TouristPopulation ;
           rdfs:label "Приезжие к мероприятиям" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0604
 pm:G_0604 rdf:type owl:NamedIndividual ,
-                   cg:TouristPopulation ;
+                   pm:TouristPopulation ;
           rdfs:label "Приезжие по рабочим вопросам" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0701
 pm:G_0701 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Студенты и учащиеся" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0702
 pm:G_0702 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Владельцы собак" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0703
 pm:G_0703 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Автовладельцы" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0704
 pm:G_0704 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Мотоциклисты" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0705
 pm:G_0705 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Велосипедисты" ,
                      "Пользователи общественного транспорта" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0706
 pm:G_0706 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Трудовые мигранты" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0707
 pm:G_0707 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Верующие, православные" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0708
 pm:G_0708 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Верующие, мусульмане" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0709
 pm:G_0709 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Верующие, иудеи" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0710
 pm:G_0710 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Горожане, ведущие раздельный сбор мусора" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0711
 pm:G_0711 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Беременные женщины" ,
                      "Горожане, занимающиеся спортом" .
 
 
 ###  http://citygraph.onti.actcognitive.org/population#G_0712
 pm:G_0712 rdf:type owl:NamedIndividual ,
-                   cg:OtherPopulationGroups ;
+                   pm:OtherPopulationGroups ;
           rdfs:label "Горожане, ведущие активный образ жизни" .
 
 
